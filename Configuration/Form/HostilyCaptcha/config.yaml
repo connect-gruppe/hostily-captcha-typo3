@@ -1,0 +1,24 @@
+name: hostily/captcha
+label: 'hostily Captcha'
+priority: 100
+
+imports:
+  - { resource: 'EXT:hostily_captcha/Configuration/Form/HostilyCaptcha/FormElements/HostilyCaptcha.yaml' }
+  - { resource: 'EXT:hostily_captcha/Configuration/Form/HostilyCaptcha/Validators/HostilyCaptcha.yaml' }
+
+prototypes:
+  standard:
+    formElementsDefinition:
+      Form:
+        renderingOptions:
+          translation:
+            translationFiles:
+              1761600: 'EXT:hostily_captcha/Resources/Private/Language/locallang.xlf'
+          partialRootPaths:
+            1761600: 'EXT:hostily_captcha/Resources/Private/Frontend/Partials/'
+    formEditor:
+      dynamicJavaScriptModules:
+        additionalViewModelModules:
+          1761600: '@hostily/hostily-captcha/backend/form-editor/view-model.js'
+      translationFiles:
+        1761600: 'EXT:hostily_captcha/Resources/Private/Language/locallang_form.xlf'

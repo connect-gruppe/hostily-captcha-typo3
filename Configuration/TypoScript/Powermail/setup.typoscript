@@ -1,0 +1,26 @@
+# hostily Captcha fuer powermail: Feldtyp "hostily Captcha" (Partial) und Spamschutz-Methode.
+# Einbinden: statisches Template "hostily Captcha for powermail" (Template-Datensatz, nach powermail) oder `@import` dieser Datei in der eigenen Setup-Datei.
+plugin.tx_powermail {
+  view.partialRootPaths.1761600 = EXT:hostily_captcha/Resources/Private/Powermail/Partials/
+
+  settings.setup {
+    spamshield.methods.1761600 {
+      _enable = 1
+      name = hostily Captcha
+      class = Hostily\HostilyCaptcha\Powermail\HostilyCaptchaMethod
+      # muss allein ueber die Spam-Toleranz (spamshield.factor) kommen: sehr hoher Wert
+      indication = 100
+      configuration {
+      }
+    }
+
+    # Das Feld hat keinen Wert: nicht in E-Mails und Bestaetigungsseite aufnehmen
+    excludeFromPowermailAllMarker {
+      confirmationPage.excludeFromFieldTypes := addToList(hostilycaptcha)
+      submitPage.excludeFromFieldTypes := addToList(hostilycaptcha)
+      optinMail.excludeFromFieldTypes := addToList(hostilycaptcha)
+      senderMail.excludeFromFieldTypes := addToList(hostilycaptcha)
+      receiverMail.excludeFromFieldTypes := addToList(hostilycaptcha)
+    }
+  }
+}

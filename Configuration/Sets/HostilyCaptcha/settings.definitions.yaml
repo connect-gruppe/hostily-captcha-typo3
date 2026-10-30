@@ -1,0 +1,44 @@
+settings:
+  hostilyCaptcha.siteKey:
+    label: 'settings.hostilyCaptcha.siteKey.label'
+    description: 'settings.hostilyCaptcha.siteKey.description'
+    type: string
+    default: ''
+  hostilyCaptcha.secret:
+    label: 'settings.hostilyCaptcha.secret.label'
+    description: 'settings.hostilyCaptcha.secret.description'
+    type: string
+    default: ''
+  hostilyCaptcha.serviceUrl:
+    label: 'settings.hostilyCaptcha.serviceUrl.label'
+    description: 'settings.hostilyCaptcha.serviceUrl.description'
+    type: string
+    default: ''
+  hostilyCaptcha.mode:
+    label: 'settings.hostilyCaptcha.mode.label'
+    type: string
+    default: ''
+    enum:
+      '': 'settings.hostilyCaptcha.global'
+      sichtbar: 'settings.hostilyCaptcha.mode.sichtbar'
+      unsichtbar: 'settings.hostilyCaptcha.mode.unsichtbar'
+  hostilyCaptcha.language:
+    label: 'settings.hostilyCaptcha.language.label'
+    type: string
+    default: ''
+    enum:
+      '': 'settings.hostilyCaptcha.global'
+      auto: 'settings.hostilyCaptcha.language.auto'
+      de: 'Deutsch'
+      en: 'English'
+  hostilyCaptcha.onError:
+    label: 'settings.hostilyCaptcha.onError.label'
+    type: string
+    default: ''
+    enum:
+      '': 'settings.hostilyCaptcha.global'
+      allow: 'settings.hostilyCaptcha.onError.allow'
+      block: 'settings.hostilyCaptcha.onError.block'
+categories:
+  hostilyCaptcha:
+    label: 'hostily Captcha'

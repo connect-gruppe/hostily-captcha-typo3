@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file source-language="en" target-language="de" datatype="plaintext" original="EXT:hostily_captcha/Resources/Private/Language/locallang_conf.xlf" product-name="hostily_captcha">
+		<body>
+			<trans-unit id="siteKey" approved="yes">
+				<source>Site key (public key of your project at captcha.hostily.de)</source>
+				<target>Site-Key (öffentlicher Schlüssel Ihres Projekts auf captcha.hostily.de)</target>
+			</trans-unit>
+			<trans-unit id="secret" approved="yes">
+				<source>Secret (only used on the server; without site key and secret nothing is protected and nothing is blocked)</source>
+				<target>Secret (wird nur vom Server benutzt; ohne Site-Key und Secret ist nichts geschützt und nichts gesperrt)</target>
+			</trans-unit>
+			<trans-unit id="serviceUrl" approved="yes">
+				<source>Service URL (default https://captcha.hostily.de)</source>
+				<target>Dienst-URL (Vorgabe https://captcha.hostily.de)</target>
+			</trans-unit>
+			<trans-unit id="mode" approved="yes">
+				<source>Mode</source>
+				<target>Modus</target>
+			</trans-unit>
+			<trans-unit id="mode.sichtbar" approved="yes">
+				<source>Visible (checkbox)</source>
+				<target>Sichtbar (Kästchen)</target>
+			</trans-unit>
+			<trans-unit id="mode.unsichtbar" approved="yes">
+				<source>Invisible (solves on submit)</source>
+				<target>Unsichtbar (löst beim Absenden)</target>
+			</trans-unit>
+			<trans-unit id="language" approved="yes">
+				<source>Widget language</source>
+				<target>Sprache des Widgets</target>
+			</trans-unit>
+			<trans-unit id="language.auto" approved="yes">
+				<source>Automatic (language of the page)</source>
+				<target>Automatisch (Sprache der Seite)</target>
+			</trans-unit>
+			<trans-unit id="onError" approved="yes">
+				<source>If the service fails (also: wrong secret)</source>
+				<target>Bei Ausfall des Dienstes (auch bei falschem Secret)</target>
+			</trans-unit>
+			<trans-unit id="onError.allow" approved="yes">
+				<source>let the visitor through (default)</source>
+				<target>durchlassen (Standard)</target>
+			</trans-unit>
+			<trans-unit id="onError.block" approved="yes">
+				<source>block the submission</source>
+				<target>blockieren</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

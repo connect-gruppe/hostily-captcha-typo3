@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file source-language="en" target-language="de" datatype="plaintext" original="EXT:hostily_captcha/Resources/Private/Language/locallang.xlf" product-name="hostily_captcha">
+		<body>
+			<trans-unit id="error.rejected" approved="yes">
+				<source>Your submission was rejected by the spam protection. Please try again.</source>
+				<target>Ihre Eingabe wurde vom Spamschutz abgelehnt. Bitte versuchen Sie es erneut.</target>
+			</trans-unit>
+			<trans-unit id="error.expired" approved="yes">
+				<source>Please confirm that you are not a robot (the check is missing or expired) and send the form again.</source>
+				<target>Bitte bestätigen Sie, dass Sie kein Roboter sind (die Prüfung fehlt oder ist abgelaufen), und senden Sie das Formular erneut.</target>
+			</trans-unit>
+			<trans-unit id="error.unavailable" approved="yes">
+				<source>The spam protection is currently not available. Please try again later.</source>
+				<target>Der Spamschutz ist derzeit nicht erreichbar. Bitte versuchen Sie es später erneut.</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

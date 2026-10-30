@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file source-language="en" datatype="plaintext" original="EXT:hostily_captcha/Resources/Private/Language/locallang.xlf" product-name="hostily_captcha">
+		<body>
+			<trans-unit id="error.rejected">
+				<source>Your submission was rejected by the spam protection. Please try again.</source>
+			</trans-unit>
+			<trans-unit id="error.expired">
+				<source>Please confirm that you are not a robot (the check is missing or expired) and send the form again.</source>
+			</trans-unit>
+			<trans-unit id="error.unavailable">
+				<source>The spam protection is currently not available. Please try again later.</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

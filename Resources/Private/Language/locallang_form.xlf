@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file source-language="en" datatype="plaintext" original="EXT:hostily_captcha/Resources/Private/Language/locallang_form.xlf" product-name="hostily_captcha">
+		<body>
+			<trans-unit id="formEditor.elements.HostilyCaptcha.label">
+				<source>hostily Captcha</source>
+			</trans-unit>
+			<trans-unit id="formEditor.elements.HostilyCaptcha.description">
+				<source>Spam protection by hostily (captcha.hostily.de)</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

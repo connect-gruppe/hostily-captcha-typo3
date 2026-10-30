@@ -1,0 +1,5 @@
+prototypes:
+  standard:
+    validatorsDefinition:
+      HostilyCaptcha:
+        implementationClassName: Hostily\HostilyCaptcha\Validation\HostilyCaptchaValidator

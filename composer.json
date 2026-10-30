@@ -1,0 +1,31 @@
+{
+    "name": "hostily/captcha-typo3",
+    "description": "hostily Captcha spam protection for TYPO3 (EXT:form and powermail), captcha.hostily.de",
+    "type": "typo3-cms-extension",
+    "version": "0.1.1",
+    "license": "GPL-2.0-or-later",
+    "homepage": "https://captcha.hostily.de",
+    "authors": [
+        {
+            "name": "hostily"
+        }
+    ],
+    "require": {
+        "php": ">=8.1",
+        "typo3/cms-core": "^12.4 || ^13.4 || ^14.0"
+    },
+    "suggest": {
+        "typo3/cms-form": "Form element \"hostily Captcha\" for the form framework",
+        "in2code/powermail": "Spam protection method and field type for powermail 12/13"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hostily\\HostilyCaptcha\\": "Classes/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "hostily_captcha"
+        }
+    }
+}

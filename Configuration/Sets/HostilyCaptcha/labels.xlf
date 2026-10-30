@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file source-language="en" datatype="plaintext" original="EXT:hostily_captcha/Configuration/Sets/HostilyCaptcha/labels.xlf" product-name="hostily_captcha">
+		<body>
+			<trans-unit id="settings.hostilyCaptcha.siteKey.label">
+				<source>Site key</source>
+			</trans-unit>
+			<trans-unit id="settings.hostilyCaptcha.siteKey.description">
+				<source>Overrides the global extension setting for this site. Empty = global setting.</source>
+			</trans-unit>
+			<trans-unit id="settings.hostilyCaptcha.secret.label">
+				<source>Secret</source>
+			</trans-unit>
+			<trans-unit id="settings.hostilyCaptcha.secret.description">
+				<source>Secret key of the project (only used on the server). Empty = global setting.</source>
+			</trans-unit>
+			<trans-unit id="settings.hostilyCaptcha.serviceUrl.label">
+				<source>Service URL</source>
+			</trans-unit>
+			<trans-unit id="settings.hostilyCaptcha.serviceUrl.description">
+				<source>Empty = global setting (default https://captcha.hostily.de).</source>
+			</trans-unit>
+			<trans-unit id="settings.hostilyCaptcha.mode.label">
+				<source>Mode</source>
+			</trans-unit>
+			<trans-unit id="settings.hostilyCaptcha.language.label">
+				<source>Widget language</source>
+			</trans-unit>
+			<trans-unit id="settings.hostilyCaptcha.onError.label">
+				<source>If the service fails</source>
+			</trans-unit>
+			<trans-unit id="settings.hostilyCaptcha.global">
+				<source>(global setting)</source>
+			</trans-unit>
+			<trans-unit id="settings.hostilyCaptcha.mode.sichtbar">
+				<source>Visible (checkbox)</source>
+			</trans-unit>
+			<trans-unit id="settings.hostilyCaptcha.mode.unsichtbar">
+				<source>Invisible (solves on submit)</source>
+			</trans-unit>
+			<trans-unit id="settings.hostilyCaptcha.language.auto">
+				<source>Automatic (language of the page)</source>
+			</trans-unit>
+			<trans-unit id="settings.hostilyCaptcha.onError.allow">
+				<source>let the visitor through</source>
+			</trans-unit>
+			<trans-unit id="settings.hostilyCaptcha.onError.block">
+				<source>block the submission</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

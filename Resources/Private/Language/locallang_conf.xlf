@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file source-language="en" datatype="plaintext" original="EXT:hostily_captcha/Resources/Private/Language/locallang_conf.xlf" product-name="hostily_captcha">
+		<body>
+			<trans-unit id="siteKey">
+				<source>Site key (public key of your project at captcha.hostily.de)</source>
+			</trans-unit>
+			<trans-unit id="secret">
+				<source>Secret (only used on the server; without site key and secret nothing is protected and nothing is blocked)</source>
+			</trans-unit>
+			<trans-unit id="serviceUrl">
+				<source>Service URL (default https://captcha.hostily.de)</source>
+			</trans-unit>
+			<trans-unit id="mode">
+				<source>Mode</source>
+			</trans-unit>
+			<trans-unit id="mode.sichtbar">
+				<source>Visible (checkbox)</source>
+			</trans-unit>
+			<trans-unit id="mode.unsichtbar">
+				<source>Invisible (solves on submit)</source>
+			</trans-unit>
+			<trans-unit id="language">
+				<source>Widget language</source>
+			</trans-unit>
+			<trans-unit id="language.auto">
+				<source>Automatic (language of the page)</source>
+			</trans-unit>
+			<trans-unit id="onError">
+				<source>If the service fails (also: wrong secret)</source>
+			</trans-unit>
+			<trans-unit id="onError.allow">
+				<source>let the visitor through (default)</source>
+			</trans-unit>
+			<trans-unit id="onError.block">
+				<source>block the submission</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

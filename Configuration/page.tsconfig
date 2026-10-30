@@ -1,0 +1,4 @@
+# powermail: Feldtyp "hostily Captcha" im Auswahlfeld des Feldes anbieten (Partial Form/Field/Hostilycaptcha.html)
+tx_powermail.flexForm.type.addFieldOptions.hostilycaptcha = hostily Captcha
+tx_powermail.flexForm.type.addFieldOptions.hostilycaptcha.dataType = 0
+tx_powermail.flexForm.type.addFieldOptions.hostilycaptcha.export = 0

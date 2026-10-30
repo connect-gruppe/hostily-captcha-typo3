@@ -1,0 +1,33 @@
+prototypes:
+  standard:
+    formElementsDefinition:
+      HostilyCaptcha:
+        implementationClassName: Hostily\HostilyCaptcha\Domain\Model\FormElements\HostilyCaptchaElement
+        properties:
+          containerClassAttribute: 'input captcha hostily-captcha'
+        renderingOptions:
+          # Das Element hat keinen Wert: aus der Zusammenfassung und den E-Mails der Abschluss-Aktionen heraushalten
+          _isCompositeFormElement: true
+        formEditor:
+          label: formEditor.elements.HostilyCaptcha.label
+          description: formEditor.elements.HostilyCaptcha.description
+          group: custom
+          groupSorting: 650
+          iconIdentifier: form-hostily-captcha
+          editors:
+            100:
+              identifier: header
+              templateName: Inspector-FormElementHeaderEditor
+            200:
+              identifier: label
+              templateName: Inspector-TextEditor
+              label: formEditor.elements.FormElement.editor.label.label
+              propertyPath: label
+            9999:
+              identifier: removeButton
+              templateName: Inspector-RemoveElementEditor
+          predefinedDefaults:
+            label: 'hostily Captcha'
+    formEditor:
+      formEditorPartials:
+        FormElement-HostilyCaptcha: Stage/SimpleTemplate
