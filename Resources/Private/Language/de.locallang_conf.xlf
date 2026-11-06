@@ -16,7 +16,7 @@
 			</trans-unit>
 			<trans-unit id="mode" approved="yes">
 				<source>Mode</source>
-				<target>Modus</target>
+				<target>Modus („Gedrückt halten“ und „Schieberegler“ bieten immer die Alternative „Per Klick bestätigen“)</target>
 			</trans-unit>
 			<trans-unit id="mode.sichtbar" approved="yes">
 				<source>Visible (checkbox)</source>
@@ -45,6 +45,22 @@
 			<trans-unit id="onError.block" approved="yes">
 				<source>block the submission</source>
 				<target>blockieren</target>
+			</trans-unit>
+			<trans-unit id="mode.portal" approved="yes">
+				<source>As in the customer portal (project setting)</source>
+				<target>Wie im Kundenportal (Einstellung des Projekts)</target>
+			</trans-unit>
+			<trans-unit id="mode.halten" approved="yes">
+				<source>Press and hold</source>
+				<target>Gedrückt halten</target>
+			</trans-unit>
+			<trans-unit id="mode.schieben" approved="yes">
+				<source>Slider</source>
+				<target>Schieberegler</target>
+			</trans-unit>
+			<trans-unit id="holdTime" approved="yes">
+				<source>Hold time in milliseconds (800-3000, only for press and hold; empty = default 1500)</source>
+				<target>Haltezeit in Millisekunden (800–3000, nur für „Gedrückt halten“; leer = Vorgabe 1500)</target>
 			</trans-unit>
 		</body>
 	</file>

@@ -27,7 +27,8 @@ final class WidgetViewHelper extends AbstractViewHelper
         }
         $h = static fn (string $v): string => htmlspecialchars($v, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
         $out = '<hostily-captcha data-site-key="' . $h($s['siteKey']) . '" data-api="' . $h($s['serviceUrl']) . '/api/"'
-            . ' data-modus="' . $h($s['mode']) . '"'
+            . ($s['mode'] !== 'portal' ? ' data-modus="' . $h($s['mode']) . '"' : '')
+            . ($s['mode'] === 'halten' && $s['holdTime'] !== '' ? ' data-haltezeit="' . $h($s['holdTime']) . '"' : '')
             . ($s['language'] !== '' ? ' data-sprache="' . $h($s['language']) . '"' : '')
             . '></hostily-captcha>';
         if (!self::$scriptDone) {

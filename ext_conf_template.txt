@@ -7,8 +7,11 @@ secret =
 # cat=basic; type=string; label=LLL:EXT:hostily_captcha/Resources/Private/Language/locallang_conf.xlf:serviceUrl
 serviceUrl = https://captcha.hostily.de
 
-# cat=basic; type=options[LLL:EXT:hostily_captcha/Resources/Private/Language/locallang_conf.xlf:mode.sichtbar=sichtbar,LLL:EXT:hostily_captcha/Resources/Private/Language/locallang_conf.xlf:mode.unsichtbar=unsichtbar]; label=LLL:EXT:hostily_captcha/Resources/Private/Language/locallang_conf.xlf:mode
+# cat=basic; type=options[LLL:EXT:hostily_captcha/Resources/Private/Language/locallang_conf.xlf:mode.portal=portal,LLL:EXT:hostily_captcha/Resources/Private/Language/locallang_conf.xlf:mode.sichtbar=sichtbar,LLL:EXT:hostily_captcha/Resources/Private/Language/locallang_conf.xlf:mode.unsichtbar=unsichtbar,LLL:EXT:hostily_captcha/Resources/Private/Language/locallang_conf.xlf:mode.halten=halten,LLL:EXT:hostily_captcha/Resources/Private/Language/locallang_conf.xlf:mode.schieben=schieben]; label=LLL:EXT:hostily_captcha/Resources/Private/Language/locallang_conf.xlf:mode
 mode = sichtbar
+
+# cat=basic; type=int+; label=LLL:EXT:hostily_captcha/Resources/Private/Language/locallang_conf.xlf:holdTime
+holdTime = 1500
 
 # cat=basic; type=options[LLL:EXT:hostily_captcha/Resources/Private/Language/locallang_conf.xlf:language.auto=auto,Deutsch=de,English=en]; label=LLL:EXT:hostily_captcha/Resources/Private/Language/locallang_conf.xlf:language
 language = auto

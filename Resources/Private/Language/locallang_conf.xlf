@@ -12,7 +12,7 @@
 				<source>Service URL (default https://captcha.hostily.de)</source>
 			</trans-unit>
 			<trans-unit id="mode">
-				<source>Mode</source>
+				<source>Mode (Press and hold and Slider always offer the alternative "Confirm with a click")</source>
 			</trans-unit>
 			<trans-unit id="mode.sichtbar">
 				<source>Visible (checkbox)</source>
@@ -34,6 +34,18 @@
 			</trans-unit>
 			<trans-unit id="onError.block">
 				<source>block the submission</source>
+			</trans-unit>
+			<trans-unit id="mode.portal">
+				<source>As in the customer portal (project setting)</source>
+			</trans-unit>
+			<trans-unit id="mode.halten">
+				<source>Press and hold</source>
+			</trans-unit>
+			<trans-unit id="mode.schieben">
+				<source>Slider</source>
+			</trans-unit>
+			<trans-unit id="holdTime">
+				<source>Hold time in milliseconds (800-3000, only for press and hold; empty = default 1500)</source>
 			</trans-unit>
 		</body>
 	</file>

@@ -20,8 +20,16 @@ settings:
     default: ''
     enum:
       '': 'settings.hostilyCaptcha.global'
+      portal: 'settings.hostilyCaptcha.mode.portal'
       sichtbar: 'settings.hostilyCaptcha.mode.sichtbar'
       unsichtbar: 'settings.hostilyCaptcha.mode.unsichtbar'
+      halten: 'settings.hostilyCaptcha.mode.halten'
+      schieben: 'settings.hostilyCaptcha.mode.schieben'
+  hostilyCaptcha.holdTime:
+    label: 'settings.hostilyCaptcha.holdTime.label'
+    description: 'settings.hostilyCaptcha.holdTime.description'
+    type: string
+    default: ''
   hostilyCaptcha.language:
     label: 'settings.hostilyCaptcha.language.label'
     type: string

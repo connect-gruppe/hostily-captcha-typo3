@@ -28,7 +28,7 @@
 			</trans-unit>
 			<trans-unit id="settings.hostilyCaptcha.mode.label">
 				<source>Mode</source>
-				<target>Modus</target>
+				<target>Modus („Gedrückt halten“ und „Schieberegler“ bieten immer die Alternative „Per Klick bestätigen“)</target>
 			</trans-unit>
 			<trans-unit id="settings.hostilyCaptcha.language.label">
 				<source>Widget language</source>
@@ -61,6 +61,26 @@
 			<trans-unit id="settings.hostilyCaptcha.onError.block">
 				<source>block the submission</source>
 				<target>blockieren</target>
+			</trans-unit>
+			<trans-unit id="settings.hostilyCaptcha.mode.portal" approved="yes">
+				<source>As in the customer portal (project setting)</source>
+				<target>Wie im Kundenportal (Einstellung des Projekts)</target>
+			</trans-unit>
+			<trans-unit id="settings.hostilyCaptcha.mode.halten" approved="yes">
+				<source>Press and hold</source>
+				<target>Gedrückt halten</target>
+			</trans-unit>
+			<trans-unit id="settings.hostilyCaptcha.mode.schieben" approved="yes">
+				<source>Slider</source>
+				<target>Schieberegler</target>
+			</trans-unit>
+			<trans-unit id="settings.hostilyCaptcha.holdTime.label" approved="yes">
+				<source>Hold time (ms)</source>
+				<target>Haltezeit (ms)</target>
+			</trans-unit>
+			<trans-unit id="settings.hostilyCaptcha.holdTime.description" approved="yes">
+				<source>800-3000, only for press and hold. Empty = global setting.</source>
+				<target>800–3000, nur für „Gedrückt halten“. Leer = globale Einstellung.</target>
 			</trans-unit>
 		</body>
 	</file>

@@ -21,7 +21,7 @@
 				<source>Empty = global setting (default https://captcha.hostily.de).</source>
 			</trans-unit>
 			<trans-unit id="settings.hostilyCaptcha.mode.label">
-				<source>Mode</source>
+				<source>Mode (Press and hold and Slider always offer the alternative "Confirm with a click")</source>
 			</trans-unit>
 			<trans-unit id="settings.hostilyCaptcha.language.label">
 				<source>Widget language</source>
@@ -46,6 +46,21 @@
 			</trans-unit>
 			<trans-unit id="settings.hostilyCaptcha.onError.block">
 				<source>block the submission</source>
+			</trans-unit>
+			<trans-unit id="settings.hostilyCaptcha.mode.portal">
+				<source>As in the customer portal (project setting)</source>
+			</trans-unit>
+			<trans-unit id="settings.hostilyCaptcha.mode.halten">
+				<source>Press and hold</source>
+			</trans-unit>
+			<trans-unit id="settings.hostilyCaptcha.mode.schieben">
+				<source>Slider</source>
+			</trans-unit>
+			<trans-unit id="settings.hostilyCaptcha.holdTime.label">
+				<source>Hold time (ms)</source>
+			</trans-unit>
+			<trans-unit id="settings.hostilyCaptcha.holdTime.description">
+				<source>800-3000, only for press and hold. Empty = global setting.</source>
 			</trans-unit>
 		</body>
 	</file>

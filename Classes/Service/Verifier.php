@@ -22,7 +22,7 @@ final class Verifier implements LoggerAwareInterface, SingletonInterface
 {
     use LoggerAwareTrait;
 
-    public const VERSION = '0.1.1';
+    public const VERSION = '0.2.0';
     public const TOKEN_FIELD = 'hostily-captcha-token';
 
     private const CONFIG_ERRORS = ['invalid-input-secret', 'missing-input-secret', 'bad-request'];

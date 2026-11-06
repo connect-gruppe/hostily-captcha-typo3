@@ -17,10 +17,13 @@ final class Settings
 {
     public const DEFAULT_URL = 'https://captcha.hostily.de';
 
-    private const KEYS = ['siteKey', 'secret', 'serviceUrl', 'mode', 'language', 'onError'];
+    private const KEYS = ['siteKey', 'secret', 'serviceUrl', 'mode', 'holdTime', 'language', 'onError'];
+
+    /** Erlaubte Modi; "portal" = Attribut weglassen, der Modus kommt aus dem Kundenportal. */
+    public const MODES = ['portal', 'sichtbar', 'unsichtbar', 'halten', 'schieben'];
 
     /**
-     * @return array{siteKey: string, secret: string, serviceUrl: string, mode: string, language: string, onError: string}
+     * @return array{siteKey: string, secret: string, serviceUrl: string, mode: string, holdTime: string, language: string, onError: string}
      */
     public function get(?ServerRequestInterface $request = null): array
     {
@@ -47,7 +50,10 @@ final class Settings
         $url = rtrim($values['serviceUrl'], '/');
         // Nur http(s); eine ungueltige Adresse gilt als nicht konfiguriert
         $values['serviceUrl'] = $url === '' ? self::DEFAULT_URL : (preg_match('#^https?://[^\s/]+#i', $url) === 1 ? $url : '');
-        $values['mode'] = $values['mode'] === 'unsichtbar' ? 'unsichtbar' : 'sichtbar';
+        // Unbekannter oder leerer (alter) Wert: sichtbar wie bisher
+        $values['mode'] = in_array($values['mode'], self::MODES, true) ? $values['mode'] : 'sichtbar';
+        // Haltezeit in ms, nur fuer "halten"; ausserhalb 800-3000 oder leer: Widget-Vorgabe
+        $values['holdTime'] = ctype_digit($values['holdTime']) ? (string)max(800, min(3000, (int)$values['holdTime'])) : '';
         $values['onError'] = $values['onError'] === 'block' ? 'block' : 'allow';
         if ($values['language'] === 'auto' || $values['language'] === '') {
             $values['language'] = $this->languageOf($request);

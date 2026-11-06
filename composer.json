@@ -2,7 +2,7 @@
     "name": "hostily/captcha-typo3",
     "description": "hostily Captcha spam protection for TYPO3 (EXT:form and powermail), captcha.hostily.de",
     "type": "typo3-cms-extension",
-    "version": "0.1.1",
+    "version": "0.2.0",
     "license": "GPL-2.0-or-later",
     "homepage": "https://captcha.hostily.de",
     "authors": [
